@@ -8,14 +8,14 @@
 	<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
 	<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
 
-	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=yes" />
 
 	
 
 </head>
 <body>
 	<header>
-		<img id="headerImg" src="bilder/chaboHeader2.png" alt="ChaBo AS - header bilde" />
+		<a href="index.html"><img id="headerImg" src="bilder/chaboHeader2.png" alt="ChaBo AS - header bilde" /></a>
 	</header>
 
 	<div class="mainMenu">
@@ -40,15 +40,58 @@
 		<div class="space"></div>
 
 		<h1 class="containerContent" style="font-size: 80px;">Vestland </h1>
-		<h2 class="containerContent"></h2>
+		<h2 class="containerContent">Velg fylke:</h2>
 
 		<div id="fylker" class="containerContent">
-			<a id="valgtFylke" href="vestland.html">Vestland</a><br/><br/>
-			<a href="rogaland.html">Rogaland</a><br/><br/>
-			<a href="agder.html">Agder</a><br/><br/>
+			<ul>
+				<li><a id="valgtFylke" href="vestland.html">Vestland</a></li>
+				<li><a href="rogaland.html">Rogaland</a></li>
+				<li><a href="agder.html">Agder</a></li>	
+			</ul>
 		</div>
 
-		<div id='map' class="containerContent" style='width: 800px; height: 600px;'></div>
+		<h3 class="containerContent">Ladepunkt i Bergen!</h3>
+		<p class="containerContent">Ladepunktet i Bergen er et fint sted å ta seg en pause! <br/>
+		Her er det mange muligheter for shopping, middag og mye mer!</p>
+
+		<div class="containerContent"><div id='map' style='width: 400px; height: 300px;'></div></div>
+
+		<h1 class="containerContent"><a target="_blank" href="https://goo.gl/maps/Mfx5fDGEMmS94j1n7">Navigasjon til ladepunkt</a></h1>
+
+		<table id="stasjonInf" class="containerContent">
+			<tr>
+				<th>Adresse:</th>
+				<th>Geo-posisjon:</th>
+				<th>Ladekontakt:</th>
+				<th>Lade effekt:</th>
+				<th>pris:</th>
+			</tr>
+			<tr>
+				<td>(Plassholder)</td>
+				<td>60°23'47N - 5°19'26Ø</td>
+				<td>Type1, Type2, CHAdeMo og CCS</td>
+				<td>50 kW</td>
+				<td>4,99,- per kWh</td>
+			</tr>
+		</table>
+
+
+		<div class="containerContent">
+			<h2>Ladetid: </h2>
+			<div class="placeHolder">
+				<h2>Dummy</h2>
+			</div>
+		</div>
+
+		<div class="containerContent">
+			<h2>Tilgjengelige tjenester ved ladepunkt</h2>
+			<ul>
+				<li>Toaletter</li>
+				<li>Spisesteder</li>
+				<li>Shopping</li>
+				<li>Dagligvare handel</li>
+			</ul>
+		</div>
 		
 		<!-- 
 		
@@ -132,6 +175,6 @@
 
 	<div class="space"></div>
 
-	<footer>Copyright © 2020 Sander Aasen Skønberg</footer>
+	<footer></footer>
 </body>
 </html>

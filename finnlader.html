@@ -14,7 +14,7 @@
 	<script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
 	<link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
 
-	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+	<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=yes" />
 
 	<!-- 
 		
@@ -25,7 +25,7 @@
 </head>
 <body>
 	<header>
-		<img id="headerImg" src="bilder/chaboHeader2.png" alt="ChaBo AS - header bilde" />
+		<a href="index.html"><img id="headerImg" src="bilder/chaboHeader2.png" alt="ChaBo AS - header bilde" /></a>
 	</header>
 
 	<div class="mainMenu">
@@ -50,21 +50,26 @@
 		<div class="space"></div>
 
 		<h1 class="containerContent">Finn din ladestasjon: </h1>
-		<h2 class="containerContent">Velg fylke</h2>
+		<h2 class="containerContent">Velg fylke:</h2>
 
 		<div id="fylker" class="containerContent">
-			<a href="vestland.html">Vestland</a><br/><br/>
-			<a href="rogaland.html">Rogaland</a><br/><br/>
-			<a href="agder.html">Agder</a><br/><br/>
+			<ul>
+				<li><a href="vestland.html">Vestland</a></li>
+				<li><a href="rogaland.html">Rogaland</a></li>
+				<li><a href="agder.html">Agder</a></li>	
+			</ul>
 		</div>
 
-		<div id='map' class="containerContent" style='width: 800px; height: 600px;'></div>
+		<div class="containerContent"><div id='map' style='width: 400px; height: 300px;'></div></div>
+
 
 		<!-- 
 		
 		Kode for map.
 	
 		-->
+
+
 
 		<script>
 			mapboxgl.accessToken = 'pk.eyJ1Ijoic2FuZGVyYXNrbyIsImEiOiJja2V0cm1rOHMwNHlrMnR0ajMzbjVma2RsIn0.Rbtuu5VrBRa5uffIscdKVg';
@@ -150,6 +155,6 @@
 
 	<div class="space"></div>
 
-	<footer>Copyright © 2020 Sander Aasen Skønberg</footer>
+	<footer></footer>
 </body>
 </html>
